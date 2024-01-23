@@ -1,0 +1,39 @@
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Soft blur effect */
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #333; /* Dark grey color for text */
+    font-size: 18px; /* Legible font size */
+    font-weight: 500; /* Medium font weight */
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px; /* Slightly rounded corners for the hover effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-list a:hover,
+  .nav-list a:focus {
+    background-color: #f8f8f8; /* Light grey background on hover/focus */
+    color: #e63946; /* Highlight color for text on hover/focus */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    .nav-list a {
+      margin: 5px 0; /* Adjust margin for stacked layout */
+    }
+  }
+  
